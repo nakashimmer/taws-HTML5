@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>はじめてのcanvas</title>
+	<style>
+		#mycanvas{border:1px solid gray;}
+	</style>
+</head>
+<body>
+	<!-- ここにcanvas要素のコードを書きましょう -->
+	<canvas id="canvas1" width="300" height="300">
+	</canvas>
+
+	<!-- ここにJavaScript のコードを書きましょう -->
+	<script>
+		var canvas1 = document.getElementById("canvas1");
+		var c = canvas1.getContext("2d");
+		//ここに描画のソースを記述しましょう
+		//矩形
+		var d=0;
+		setInterval(anime,50);
+		function anime(){
+			c.clearRect(0,0,300,300);
+			c.fillStyle = "red";
+			c.fillRect(0+d,0,50,50);
+			d++;
+			if(300<x){d=-50;}
+		}
+	</script>
+</body>
+</html>
