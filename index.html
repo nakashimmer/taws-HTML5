@@ -2,22 +2,99 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>東京アプリ・ワークショップ「HTML5入門」サンプル</title>
+		<title>東京アプリ・ワークショップ「HTML5入門」</title>
+		<style>
+			*{margin:0;padding:0;font-size:16px;line-height:1.5em;}
+			h1{text-align:center;font-size:2em;background-color:gray;color:white;}
+			main{max-width:800px;margin:0 auto;}
+			main>section{border:1px dotted gray;border-radius:1em;}
+			section{margin:0.5em;padding:0.5em;}
+			ol,ul{margin-left:2em;}
+			p{margin:0.5em;}
+			.attention{
+				background-color: pink;
+			}
+			a{text-decoration:none;color:brown;font-weight: bold;
+				display:inline-block;border-bottom:1px dotted red;
+				margin:0 0.2em;
+			}
+			footer>p{background-color:gray;color:white;text-align:center;margin:0;}
+		</style>
 	</head>
 	<body>
+		<header>
+			<h1>東京アプリ・ワークショップ「HTML5入門」</h1>
+		</header>
 
-		<h1>東京アプリ・ワークショップ「HTML5入門」</h1>
-		<p>これらのファイルは、東京アプリ・ワークショップが主催する、「HTML5入門」の教材です。</p>
+		<main>
+			<section class="attention">
+				<h2>【重要】サンプルのダウンロード</h2>
+				<p><a href="https://github.com/nakashimmer/tawsHTML5/archive/master.zip">ここをクリック</a>してサンプルファイルをダウンロードしてください。</p>
+				<p>その中にある「tawsHTML5-master」フォルダをPCのデスクトップ上などに置いてください。</p>
+			</section>
+			<section>
+				<h2>ご参加の皆様へ</h2>
+				<p>ご参加の際の注意事項をお知らせします。</p>
 
-		<p>サンプルのダウンロードは<a href="https://github.com/nakashimmer/tawsHTML5/archive/master.zip">ここをクリック</a>してください。</p>
-		<p>HTML5入門について</p>
+				<section>
+					<h3>時間について</h3>
+					<p>当日、10時00分開始です。10分前くらいから入室が可能です。</p>
+				</section>
 
-		<blockquote>
-			<p>2014年10月28日、WEBページを作るためのHTMLは、「HTML5」として大幅に改定されました。  </p>
-			<p>そんなHTML5も３年を過ぎました。単なるサイトから、よりリッチなデザインで動きのあるWEBアプリケーションへ。</p>
-			<p>そんなHTML5に一日どっぷりなワークショップを開催しています。ぜひご参加ください。</p>
-			<p>このコースは初心者のかたを対象に、HTML5で作る構造、CSS3のリッチなデザイン、そしてJavaScriptと、HTML5の最大の特徴である描画の機能のCanvas APIを、まるっと横断的に体験していただく講座です。 毎回の講座の様子を次のURLで公開しています。</p>
-			<p><a href="https://www.facebook.com/tokyoAppWorkShop">https://www.facebook.com/tokyoAppWorkShop</a></p>
-		</blockquote>
-</body>
+				<section>
+					<h3>場所について</h3>
+					<p>場所は「中央区産業会館」。
+					<a href="http://www.chuo-sangyo.jp/access/access.html">地図はこちら</a>です。
+					道を間違えないでおいでください。</p>
+							
+					<p>会館正面入って右側にエレベータがありますので４階にお上がりください。
+							「東京アプリ・ワークショップ」と掲示されています。</p>
+				</section>
+
+				<section>
+					<h3>電源について</h3>
+					<p>電源タップを３時間をめどにローテーションでお回しします。
+					なるべく３時間程度は保つよう、あらかじめPCを100%充電をしておいてください。
+					またPCは良好な状態に整えておいてください。</p>
+				</section>
+
+				<section>
+					<h3>テキストエディタ</h3>
+					<p>エディタでのテキスト入力が中心です。</p>
+					<ol>
+						<li>エディタの「起動」「ファイルを開く」「編集」「保存」などの操作は各自ができるようにしておいてください。</li>
+						<li>ワークショップでの個別サポートは行えません。</li>
+						<li>TeraPadとmiの<a href="http://tokyoappwork.shop/editor/">使い方のビデオ</a>を作りましたので、参考にしてください。</li>
+					</ol>
+				</section>
+				<section>
+					<h3>ブラウザ</h3>
+					<p><a href="https://www.google.co.jp/chrome/index.html">Google Chrome</a>を使用します。必ずインストールしておいてください。</p>
+				</section>
+				<section>
+					<h3>その他</h3>
+					<ul>
+						<li>持参するものなども含めて、<a href="https://www.street-academy.com/myclass/277">ストアカページ</a>a>で今一度ご確認ください。</li>
+						<li>会場にはインターネットやWifi機器はありません。ワークショップでも使用しません。</li>
+						<li>お昼休みは12-13時の予定です。終了は16時半過ぎを目標にしています。</li>
+					</ul>
+				</section>
+				<p>楽しい講座になるよう頑張ります。どうぞよろしくお願いします。</p>
+			</section>
+			<section>
+				<h2>参考：HTML5入門について</h2>
+
+				<blockquote>
+					<p>2014年10月28日、WEBページを作るためのHTMLは、「HTML5」として大幅に改定されました。  </p>
+					<p>そんなHTML5も３年を過ぎました。単なるサイトから、よりリッチなデザインで動きのあるWEBアプリケーションへ。</p>
+					<p>そんなHTML5に一日どっぷりなワークショップを開催しています。ぜひご参加ください。</p>
+					<p>このコースは初心者のかたを対象に、HTML5で作る構造、CSS3のリッチなデザイン、そしてJavaScriptと、HTML5の最大の特徴である描画の機能のCanvas APIを、まるっと横断的に体験していただく講座です。 毎回の講座の様子を次のURLで公開しています。</p>
+					<p><a href="https://www.facebook.com/tokyoAppWorkShop">https://www.facebook.com/tokyoAppWorkShop</a></p>
+				</blockquote>
+			</section>
+		</main>
+		<footer>
+			<p><small>(C)東京アプリ・ワークショップ</small></p>
+		</footer>
+	</body>
 </html>
