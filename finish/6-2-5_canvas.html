@@ -17,13 +17,13 @@
 
 		<!-- ここにJavaScript のコードを書きましょう -->
 		<script>
-			var canvas1 = document.getElementById("canvas1");		//要素の取得
-			var c = canvas1.getContext("2d");									//道具の取得
+			const CANVAS1 = document.getElementById("canvas1");		//要素の取得
+			const CTX = CANVAS1.getContext("2d");									//道具の取得
 			//ここに描画のソースを記述しましょう
 			
-			c.font = "50px serif";									//フォントの指定
-			c.fillStyle = "orange";
-			c.fillText("HTML5",50,150);							//文字を表示する
+			CTX.font = "50px serif";									//フォントの指定
+			CTX.fillStyle = "orange";
+			CTX.fillText("HTML5",50,150);							//文字を表示する
 		</script>
 	</body>
 </html>

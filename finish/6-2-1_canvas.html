@@ -17,12 +17,12 @@
 
 		<!-- ここにJavaScript のコードを書きましょう -->
 		<script>
-			var canvas1 = document.getElementById("canvas1");		//要素の取得
-			var c = canvas1.getContext("2d");									//道具の取得
+			const CANVAS1 = document.getElementById("canvas1");		//要素の取得
+			const CTX = CANVAS1.getContext("2d");									//道具の取得
 			//ここに描画のソースを記述しましょう
 			
-			c.fillStyle = "red";									//色の設定
-			c.fillRect(50,50,200,200);							//矩形を描画
+			CTX.fillStyle = "red";									//色の設定
+			CTX.fillRect(50,50,200,200);							//矩形を描画
 			
 		</script>
 	</body>
