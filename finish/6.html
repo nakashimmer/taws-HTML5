@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>文字</title>
+		<title>矩形</title>
 		<style>
 			#canvas1{
 				border:1px solid gray;
@@ -18,12 +18,12 @@
 		<!-- ここにJavaScript のコードを書きましょう -->
 		<script>
 			const CANVAS1 = document.getElementById("canvas1");		//要素の取得
-			const CTX = CANVAS1.getContext("2d");									//道具の取得
-			//ここに描画のソースを記述しましょう
+			const CTX1 = CANVAS1.getContext("2d");									//道具の取得
+
+			//矩形
+			CTX1.fillStyle = "red";									//色の設定
+			CTX1.fillRect(50,50,200,200);							//矩形を描画
 			
-			CTX.font = "50px serif";									//フォントの指定
-			CTX.fillStyle = "orange";
-			CTX.fillText("HTML5",50,150);							//文字を表示する
 		</script>
 	</body>
 </html>
