@@ -23,13 +23,15 @@
 			//矩形
 			CTX1.fillStyle = "red";									//色の設定
 
-			//アニメーション
-			let x=0;
-			setInterval(()=>{
-					CTX1.clearRect(0,0,300,300);
-					CTX1.fillRect(50+x,50,200,200);							//矩形を描画
-					x++;if(300<x){x=-200};
-			});
+			let x = 0;
+			setInterval(loop, 50);
+			function loop() {
+				CTX1.clearRect(0, 0, 300, 300);
+				CTX1.fillRect(50 + x, 50, 200, 200);						//矩形を描画
+				x++;
+				if (300 < x) { x = -200 };
+			};
+
 			
 		</script>
 	</body>
