@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5について</title>
+		<meta name="viewport" content="width=device-width">
+	<style>
+		*{											/* 全称セレクタの */
+			margin:3px;						/* 外側余白 */
+			padding:3px; 					/* 内側隙間 */
+		}
+		#wrap{									/* idが"wrap"の要素の */
+			border:1px solid gray; 	/* 枠線は1pxの太さの実践で灰色 */
+			width:400px; 					/* コンテンツ横幅は400px */
+			margin:0px auto; 			/* 外側隙間は上下が0px、左右は自動 */
+		}
+		header h1{									/* header要素内h1要素の */
+			text-align:center;			/* テキストの揃えは中央 */
+			font-size:16px;				/* 文字の大きさは16px */
+		}
+		nav ul{									/* nav要素内のul要素の */
+			display:flex; 					/* 表示形式は柔軟(=小要素は横並び) */
+			list-style:none; 			/* リスト記号はなし */
+		}
+		nav ul li{							/* nav要素内 ul要素内 li要素の */
+			flex:1;								/* 重みは1 */
+			text-align:center; 
+			border:1px solid gray;
+			font-size:16px;
+		}
+		main{									/* main要素の */
+			border:1px solid gray;
+		}
+		h2,p{
+			font-size:16px;
+		}
+		footer p small{/* footer要素内〜small要素 */
+			text-align:center;
+			font-size:16px;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<h1>HTML5について</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="html.html">HTML</a></li>
+					<li><a href="css.html">CSS</a></li>
+					<li><a href="js.html">JS</a></li>
+				</ul>
+			</nav>
+			<main>
+				<section>
+					<h2>はじめに</h2>
+					<p>こんにちは。このサイトはHTML5について解説しています。</p>
+				</section>
+				
+				<section>
+					<h2>更新情報</h2>
+					<p>4/1 HTML5講座を大阪で開催します。詳細は<a href="osaka.html">こちら</a></p>
+				</section>
+
+				<section>
+					<h2>その他の要素</h2>
+					<p>HTML5はたのしいです</p>
+					<p>混ぜるな危険！</p>
+					<h2>入力フォームの部品</h2>
+					<p><input type="text"></p>
+					<p><input type=""></p>
+					<p><input type=""></p>
+					<p><input type=""></p>
+					<h2>マルチメディア</h2>
+					<p></p>
+					<p></p>
+				</section>
+
+
+			</main>
+			<footer>
+				<p><small>Copyright(c) 2018 中島.All Rights Reserved.</small></p>
+			</footer>
+		</div>
+	</body>
+</html>

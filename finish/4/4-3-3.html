@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>はじめてのCSS3</title>
+		<style>
+			*{margin:0;padding:0;}				/*ブラウザのCSSをリセット*/
+			div{
+				margin:30px auto;						/*外余白の大きさ*/
+				font-size:20px; 						/*文字の大きさ*/
+				width:200px; 								/*横幅*/
+				height:200px; 							/*縦幅*/
+				line-height:200px; 					/*行高*/
+				text-align:center; 					/*文字の揃え*/
+				border:1px solid gray; 			/*境界線*/
+			}
+			/*ここから下にCSS3のコードを書きましょう*/
+			/*影*/
+			.myshadow{
+				box-shadow:2px 2px 2px gray;
+				text-shadow:2px 2px 2px gray;
+			}
+			/*角丸*/
+			.myradius{
+				border-radius:15px;
+			}
+			/*グラデーション*/
+			.mygradient{
+				background:linear-gradient(gray,white);
+			} 
+		</style>
+	</head>
+	<body>
+		<div class="myshadow">影を作ります</div>
+		<div class="myradius">角を丸くします</div>
+		<div class="mygradient">グラデーション</div>
+	</body>
+</html>
