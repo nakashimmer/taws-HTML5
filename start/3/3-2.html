@@ -2,64 +2,25 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>HTML5について</title>
-		<meta name="viewport" content="width=device-width">
+		<title>はじめてのCSS3</title>
 		<style>
-			*{ /*最後に削除の予定 */
+			*{margin:0;padding:0;}
+			div{
+				margin:30px auto;
+				font-size:20px;
+				width:200px;
+				height:200px;
+				line-height:200px;
+				text-align:center;
 				border:1px solid gray;
-				margin:5px; padding:5px;
 			}
-			/*CSSリセット*/
-			*{}
-			ul{}
-			a{}
-
-			/*枠線*/
-			#wrap,nav ul li,main{}
-
-			/*間隔*/
-			#wrap{}
-			nav ul,main,h2,p{}
-
-			/*揃え*/
-			h1,li,footer p{}
-
-			/*横並べ*/
-			nav ul{}
-			nav ul li{}
-
-			/*フォントの大きさ*/
-			h1{}
-			li,h2,p,small{}
+			/*ここから下にCSS3のコードを書きましょう*/
 
 		</style>
 	</head>
 	<body>
-		<div id="wrap">
-			<header>
-				<h1>HTML5について</h1>
-			</header>
-			<nav>
-				<ul>
-					<li><a href="html.html">HTML</a></li>
-					<li><a href="css.html">CSS</a></li>
-					<li><a href="js.html">JS</a></li>
-				</ul>
-			</nav>
-			<main>
-				<section>
-					<h2>はじめに</h2>
-					<p>こんにちは。このサイトはHTML5について解説しています。</p>
-				</section>
-				
-				<section>
-					<h2>更新情報</h2>
-					<p>4/1 HTML5講座を大阪で開催します。詳細は<a href="ohsaka.html">こちら</a></p>
-				</section>
-			</main>
-			<footer>
-				<p><small>Copyright(c) 2019 中島.All Rights Reserved.</small></p>
-			</footer>
-		</div>
+		<div class="myshadow">影を作ります</div>
+		<div class="myradius">角を丸くします</div>
+		<div class="mygradient">グラデーション</div>
 	</body>
 </html>

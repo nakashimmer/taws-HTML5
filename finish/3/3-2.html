@@ -2,59 +2,25 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>HTML5について</title>
-		<meta name="viewport" content="width=device-width">
+		<title>はじめてのCSS3</title>
 		<style>
-			/*CSSリセット*/
-			*{margin:0px; padding:0px;}
-			ul{list-style:none;}
-			a{text-decoration:none;color:black;}
+			*{margin:0;padding:0;}				/*ブラウザのCSSをリセット*/
+			div{
+				margin:30px auto;						/*外余白の大きさ*/
+				font-size:20px; 						/*文字の大きさ*/
+				width:200px; 								/*横幅*/
+				height:200px; 							/*縦幅*/
+				line-height:200px; 					/*行高*/
+				text-align:center; 					/*文字の揃え*/
+				border:1px solid gray; 			/*境界線*/
+			}
+			/*ここから下にCSS3のコードを書きましょう*/
 
-			/*枠線*/
-			#wrap,nav ul li,main{border:1px solid gray;}
-
-			/*間隔*/
-			#wrap{width:400px; margin:0px auto;}
-			nav ul,main,h2,p{margin:5px;}
-
-			/*揃え*/
-			h1,li,footer p{text-align:center;}
-
-			/*横並べ*/
-			nav ul{display:flex;}
-			nav ul li{flex:1;}
-
-			/*フォントの大きさ*/
-			h1{font-size:24px;}
-			li,h2,p,small{font-size:16px;}
 		</style>
 	</head>
 	<body>
-		<div id="wrap">
-			<header>
-				<h1>HTML5について</h1>
-			</header>
-			<nav>
-				<ul>
-					<li><a href="html.html">HTML</a></li>
-					<li><a href="css.html">CSS</a></li>
-					<li><a href="js.html">JS</a></li>
-				</ul>
-			</nav>
-			<main>
-				<section>
-					<h2>はじめに</h2>
-					<p>こんにちは。このサイトはHTML5について解説しています。</p>
-				</section>
-				
-				<section>
-					<h2>更新情報</h2>
-					<p>4/1 HTML5講座を大阪で開催します。詳細は<a href="ohsaka.html">こちら</a></p>
-				</section>
-			</main>
-			<footer>
-				<p><small>Copyright(c) 2019 中島.All Rights Reserved.</small></p>
-			</footer>
-		</div>
+		<div class="myshadow">影を作ります</div>
+		<div class="myradius">角を丸くします</div>
+		<div class="mygradient">グラデーション</div>
 	</body>
 </html>

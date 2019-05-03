@@ -1,0 +1,11 @@
+/*CSSリセット*/
+*{margin:0px; padding:0px;}
+#wrap{border:1px solid gray;width:400px; margin:0px auto;}
+header h1{font-size:24px;text-align:center;}
+nav ul{margin:5px;list-style:none;display:flex;}
+nav ul li{flex:1;border:1px solid gray;text-align:center;}
+nav ul li a{text-decoration:none; color:black;display:block;}
+main{border:1px solid gray;margin:5px;}
+section h2{margin:5px;font-size:16px;}
+section h2 p{margin:5px;font-size:16px;}
+footer p{text-align:center;font-size:16px;}
