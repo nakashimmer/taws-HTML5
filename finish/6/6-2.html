@@ -2,24 +2,27 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>JSでHTML操作</title>
+		<title>JSでCSS操作</title>
 		<style>
-			#output1{border:1px solid gray;}
+			#box1{
+				border:1px solid gray;
+				width:300px;
+				height:300px;
+				line-height:300px;
+				text-align:center;
+				margin:50px auto 0 ;
+			}
 		</style>
 	</head>
 	<body>
-		<p>入力：<input id="input1" type="text"></p>
-		<button onclick="btn1();">ボタン1</button>
-		<p id="output1">ここに出力</p>
-
+		<p id="box1" onclick="btn1();">いい天気!</p>
 		<script>
-			const INPUT1 = document.getElementById("input1");			//要素の取得
-			const OUTPUT1 = document.getElementById("output1");		//要素の取得
+			const BOX1 = document.getElementById("box1");
 
-			function btn1() {															//関数の定義
-				OUTPUT1.innerHTML = INPUT1.value;						//1の値を2の内側HTMLに代入
+			function btn1(){
+				BOX1.style.color = "red";
+				BOX1.style.backgroundColor = "green";
 			}
 		</script>
 	</body>
-
 </html>
