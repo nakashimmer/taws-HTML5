@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>東京アプリ・ワークショップ「HTML5入門」</title>
+		<title>一日まるごとどっぷり「HTML5入門」</title>
 		<meta name="viewport" content="width=device-width">
 		<style>
 			*{margin:0;padding:0;font-size:16px;line-height:30px;}
@@ -33,12 +33,14 @@
 			}
 			.flex{display:flex;}
 			.flex li{list-style:none;margin:0 1em;}
+			.flex div{flex:1;}
 			summary h3{display:inline;}
+			.border{border:1px solid gray;padding:2px;}
 		</style>
 	</head>
 	<body>
 		<header>
-			<h1>東京アプリ・ワークショップ「HTML5入門」</h1>
+			<h1>一日まるごとどっぷり「HTML5入門」</h1>
 		</header>
 
 		<main>
@@ -48,17 +50,50 @@
 			</section>
 
 			<section>
-				<h2>1.HTML5紹介リンク</h2>
-				<ul>
-					<li><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">世界で最初のホームページ</a></li>
-					<li><a href="https://www.u-tokyo.ac.jp/ja/index.html">今どきのホームページ(東京大学)</a></li>
-					<li><a href="http://ss14.soniaby.com/fr/home/">動画のサイト(SONIA)</a></li>
-					<li><a href="https://tokyomusicodyssey.jp/2018/">ロングスクロール</a></li>
-					<li><a href="https://webtechpromo.org/">レスポンシブWeb</a></li>
-					<li><a href="https://www.google.com/doodles?q=interactive">Google ロゴ</a></li>
+				<h2>1.オリエンテーション</h2>
+				<div class="flex">
+				<div>
+				<h3>HTML</h3>
+				<ol>
+					<li>Dino：URL欄に<br><span class="border">chrome:dino</span>と入力してください。</li>
+					<li><a target="_blank" href="https://www.google.com/doodles?q=interactive">Google ロゴ</a></li>
+
+					<li><a target="_blank" href="http://info.cern.ch/hypertext/WWW/TheProject.html">世界で最初のHP</a></li>
+					<li><a target="_blank" href="http://www.metro.tokyo.jp/">普通のHP(東京都)</a></li>
+					<li><a target="_blank" href="http://ss14.soniaby.com/fr/home/">動画のサイト(SONIA)</a></li>
+					<li><a target="_blank" href="https://tokyomusicodyssey.jp/2018/">ロングスクロール</a></li>
+				</ol>
+				</div>
+
+				<div>
+				<h3>CSS</h3>
+				<ol>
+					<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/rich/index.html">リッチなCSS</li></li>
+					<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/CSSSanta/index.html">アニメーション</a></li>
+					<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">３次元</a></li>
+					<li><a target="_blank" href="https://webtechpromo.org/">レスポンシブWeb</a></li>
+				</ol>
+				</div>
+				<div>
+				<h3>JavaScript</h3>
+				<ol>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/kesan/index.html">計算</a></li>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/bmi/index.html">BMI</a></li>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/uranai/index.html">占い</a></li>	
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/janken/index.html">じゃんけん</a></li>	
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/maimai/index.html">ゲーム</a></li>	
+
+					<li><a href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">CSSをコントロール</a></li>	
+
+					<li><a href="https://nakashimmer.github.io/showcase/JS/deviceAccess/gps/index.html">GPS</a></li>	
+
+					<li><a href="https://nakashimmer.github.io/showcase/JS/deviceAccess/speechSynthesis/recognition/index.html">音声認識</a></li>	
+					<li><a href="https://nakashimmer.github.io/showcase/JS/machineLearning/pose/index.htmll">骨格認識(機械学習)</a></li>
+
 					<li><a href="http://hexgl.bkcore.com/play/">3Dレーシング</a></li>
 					<li><a href="https://nakashimmer.github.io/showcase/">HTML5 SHOWCASE</a></li>
-				</ul>
+				</ol>
+				</div>
 			</section>
 			<section>
 				<h2>サンプル完成品</h2>
@@ -66,43 +101,52 @@
 				<section>
 					<h4>2.狭義HTML5</h4>
 					<ul class="flex">
-						<li><a target="_blank" href="finish/2/2-2.html">基本</a></li>
-						<li><a target="_blank" href="finish/2/2-3-5.html">HTML5の要素</a></li>
+						<li><a target="_blank" href="finish/2/2-2.html">HTMLの文法</a></li>
+						<li><a target="_blank" href="finish/2/2-3-6.html">基本的な要素</a></li>
 						<li><a target="_blank" href="finish/2/2-4-4.html">その他の要素</a></li>
 					</ul>
-					<h4>3.CSS</h4>
+					<h4>3.リッチなCSS</h4>
 					<ul class="flex">
-						<li><a target="_blank" href="finish/3/3-2.html">基本的なCSS</a></li>
+						<li><a target="_blank" href="finish/3/3-2.html">CSSの文法</a></li>
+						<li><a target="_blank" href="finish/3/3-3-1.html">影のCSS</a></li>
+						<li><a target="_blank" href="finish/3/3-3-1.html">角丸のCSS</a></li>
+						<li><a target="_blank" href="finish/3/3-3-1.html">グラデーションのCSS</a></li>
 					</ul>
-					<h4>4.CSS3:リッチなスタイリング</h4>
+					<h4>4.CSS:変形・トランジション</h4>
 					<ul class="flex">
-						<li><a target="_blank" href="finish/4/4-3-3.html">影・角丸・グラデーション</a></li>
+						<li><a target="_blank" href="finish/4/4-2-1.html">回転</a></li>
+						<li><a target="_blank" href="finish/4/4-2-2.html">伸縮</a></li>
+						<li><a target="_blank" href="finish/4/4-2-3.html">移動</a></li>
+						<li><a target="_blank" href="finish/4/4-2-4.html">歪み</a></li>
+						<li><a target="_blank" href="finish/4/4-2-5.html">CSS</a></li>
 					</ul>
-					<h4>5.CSS3:変形とトランジション</h4>
+					<h4>5.JavaScript</h4>
 					<ul class="flex">
-						<li><a target="_blank" href="finish/5/5-2-5.html">回転・伸縮・移動・歪み・CSS</a></li>
+						<li><a target="_blank" href="finish/5/5-1.html">HTMLを操作</a></li>
+						<li><a target="_blank" href="finish/5/5-2.html">CSSを操作</a></li>
 					</ul>
-					<h4>6.JavaScript</h4>
-					<ul class="flex">
-						<li><a target="_blank" href="finish/6/6-1-1.html">var</a></li>
-						<li><a target="_blank" href="finish/6/6-1-2.html">let</a></li>
-						<li><a target="_blank" href="finish/6/6-1-3.html">const</a></li>
-						<li><a target="_blank" href="finish/6/6-2.html">HTML操作</a></li>
-						<li><a target="_blank" href="finish/6/6-3.html">CSS操作</a></li>
-					</ul>
+
 				</section>
 			</section>
 			<section>
 				<h2>7.ご案内</h2>
-				<ul>
-					<li><a href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">ストアカ</a></li>
-					<li><a href="https://tokyoappwork.shop/">オフィシャルページ</a>-<a href="https://www.facebook.com/tokyoAppWorkShop/">Facebookページ</a></li>
-					<li><a href="https://www.facebook.com/groups/welovehtml5/">情報ページ(We love HTML5)</a></li>
-				<li><a href="https://webtechpromo.org/">HTML5検定試験</a></li>
+				<ul class="flex">
+					<li><a target="_blank" href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">ストアカ</a></li>
+					<li><a target="_blank" href="https://www.facebook.com/WholeDayHTML5LectureRoom/">講座FBページ</a></li>
+					<li><a target="_blank" href="https://www.facebook.com/groups/WholeDayHTML5Memb">講座参加者グループ</a></li>
+				</ul>
+				<ul class="flex">
+					<li><a target="_blank" href="https://www.facebook.com/welovehtml5/">情報ページ(We love HTML5)</a></li>
+					<li><a target="_blank" href="https://nakashimmer.github.io/showcase/">HTML5 SHOW CASE</a></li>
+				</ul>
+				<ul class="flex">
+					<li><a target="_blank" href="https://webtechpromo.org/">HTML5検定試験</a></li>
+					<li><a target="_blank" href="https://www.amazon.co.jp/dp/4802096607/">「なかしまぁ先生のHTML5教室」</a></li>
+				</ul>
 			</section>
 		</main>
 		<footer>
-			<p><small>(C)東京アプリ・ワークショップ</small></p>
+			<p><small>(C)中島俊治</small></p>
 		</footer>
 	</body>
 </html>
